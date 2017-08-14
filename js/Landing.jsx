@@ -16,8 +16,14 @@ class Landing extends Component {
         });
         this.recognition.interimResults = true;
         this.recognition.addEventListener('result', e => {
+            this.display.classList.remove('results--fail', 'results--succeed');
             const transcript = Array.from(e.results).map(result => result[0]).map(result => result.transcript).join('');
             this.display.textContent = transcript;
+            if (transcript.toLowerCase().replace(/[^a-zA-Z ]/g, '') === this.state.selected.readable) {
+                this.display.classList.add('results--succeed');
+            } else {
+                this.display.classList.add('results--fail');
+            }
         });
         this.recognition.addEventListener('end', () => {
             this.setState({ speaking: !this.state.speaking });

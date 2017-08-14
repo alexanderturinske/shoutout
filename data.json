@@ -22,17 +22,17 @@
     {
         "company": "Alka Seltzer",
         "slogan": "I can’t believe I ate the whole thing",
-        "readable": "i cant believe i ate the whole thing"
+        "readable": "i can't believe i ate the whole thing"
     },
     {
         "company": "Allstate",
         "slogan": "You’re in good hands with Allstate",
-        "readable": "youre in good hands with allstate"
+        "readable": "you're in good hands with allstate"
     },
     {
         "company": "American Express",
         "slogan": "Don’t leave home without it",
-        "readable": "dont leave home without it"
+        "readable": "don't leave home without it"
     },
     {
         "company": "Apple",
@@ -52,7 +52,7 @@
     {
         "company": "Beef Council",
         "slogan": "Beef. It’s what’s for dinner",
-        "readable": "beef its whats for dinner"
+        "readable": "beef it's whats for dinner"
     },
     {
         "company": "BMW",
@@ -67,7 +67,7 @@
     {
         "company": "Brylcreem",
         "slogan": "A little dab’ll do ya",
-        "readable": "a little dabll do ya"
+        "readable": "a little dab'll do ya"
     },
     {
         "company": "Budweiser",
@@ -92,7 +92,7 @@
     {
         "company": "Capital One",
         "slogan": "What’s in your wallet?",
-        "readable": "whats in your wallet"
+        "readable": "what's in your wallet"
     },
     {
         "company": "Champale Malt Liquor",
@@ -102,7 +102,7 @@
     {
         "company": "Charmin Toilet Paper",
         "slogan": "Please Don’t Squeeze the Charmin",
-        "readable": "please dont squeeze the charmin"
+        "readable": "please don't squeeze the charmin"
     },
     {
         "company": "Chevrolet",
@@ -172,7 +172,7 @@
     {
         "company": "Frosted Flakes",
         "slogan": "They're G-r-r-r-r-eat!",
-        "readable": "theyre grrrreat"
+        "readable": "they're great"
     },
     {
         "company": "FTD",
@@ -212,7 +212,7 @@
     {
         "company": "Haig Scotch Whiskey",
         "slogan": "Don’t be vague. Ask for Haig.",
-        "readable": "dont be vague ask for haig"
+        "readable": "don't be vague ask for hag"
     },
     {
         "company": "Hallmark",
@@ -222,7 +222,7 @@
     {
         "company": "Hertz",
         "slogan": "Let Hertz Put You In the Driver’s Seat",
-        "readable": "let hertz put you in the drivers seat"
+        "readable": "let hertz put you in the driver's seat"
     },
     {
         "company": "Intel",
@@ -232,22 +232,22 @@
     {
         "company": "Ivory Soap",
         "slogan": "99 and 44/100% pure",
-        "readable": " and  pure"
+        "readable": "99 and 44/100 pure"
     },
     {
         "company": "John Deere",
         "slogan": "Nothing runs like a Deere",
-        "readable": "nothing runs like a deere"
+        "readable": "nothing runs like a deer"
     },
     {
         "company": "Kay Jewelers",
         "slogan": "Every kiss begins with Kay",
-        "readable": "every kiss begins with kay"
+        "readable": "every kiss begins with k"
     },
     {
         "company": "Kentucky Fried Chicken",
         "slogan": "Finger lickin’ good",
-        "readable": "finger lickin good"
+        "readable": "finger licking good"
     },
     {
         "company": "Lexus",
@@ -257,17 +257,17 @@
     {
         "company": "Levy’s Rye Bread",
         "slogan": "You don’t have to be Jewish to love Levy’s Rye Bread",
-        "readable": "you dont have to be jewish to love levys rye bread"
+        "readable": "you don't have to be jewish to love levy's rye bread"
     },
     {
         "company": "L’Oreal",
         "slogan": "Because I’m worth it",
-        "readable": "because im worth it"
+        "readable": "because i'm worth it"
     },
     {
         "company": "Lay’s Potato Chips",
         "slogan": "Betcha can’t eat just one",
-        "readable": "betcha cant eat just one"
+        "readable": "betcha can't eat just one"
     },
     {
         "company": "M&Ms",
@@ -277,7 +277,7 @@
     {
         "company": "MasterCard",
         "slogan": "There are some things money can’t buy, for everything else there’s MasterCard",
-        "readable": "there are some things money cant buy for everything else theres mastercard"
+        "readable": "there are some things money can't buy for everything else theres mastercard"
     },
     {
         "company": "Maxwell House",
@@ -287,7 +287,7 @@
     {
         "company": "McDonald’s",
         "slogan": "I’m lovin’ it",
-        "readable": "im lovin it"
+        "readable": "i'm lovin it"
     },
     {
         "company": "Meow Mix",
@@ -307,7 +307,7 @@
     {
         "company": "Motel 6",
         "slogan": "We’ll leave a light on for you",
-        "readable": "well leave a light on for you"
+        "readable": "we'll leave a light on for you"
     },
     {
         "company": "National Milk Producers Board",
@@ -372,12 +372,12 @@
     {
         "company": "Smith Barney",
         "slogan": "We make money the old-fashioned way. We earn it.",
-        "readable": "we make money the oldfashioned way we earn it"
+        "readable": "we make money the old-fashioned way we earn it"
     },
     {
         "company": "Smucker’s",
         "slogan": "With a name like Smucker’s, it has to be good",
-        "readable": "with a name like smuckers it has to be good"
+        "readable": "with a name like smucker's it has to be good"
     },
     {
         "company": "Sprite",
@@ -402,7 +402,7 @@
     {
         "company": "The New York Times",
         "slogan": "All the news that’s fit to print",
-        "readable": "all the news thats fit to print"
+        "readable": "all the news that's fit to print"
     },
     {
         "company": "Timex",
@@ -457,7 +457,7 @@
     {
         "company": "Wendy’s",
         "slogan": "Where’s the beef?",
-        "readable": "wheres the beef"
+        "readable": "where's the beef"
     },
     {
         "company": "Wheaties",
@@ -467,7 +467,7 @@
     {
         "company": "WINS Radio, New York",
         "slogan": "You give us 22 minutes, we’ll give you the world",
-        "readable": "you give us  minutes well give you the world"
+        "readable": "you give us 22 minutes we'll give you the world"
     },
     {
         "company": "Winston Cigarettes",

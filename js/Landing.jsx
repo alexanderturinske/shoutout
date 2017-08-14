@@ -21,35 +21,55 @@ class Landing extends Component {
         this.recognition.addEventListener('end', this.recognition.start);
     }
     setSelected = event => {
-        const [selected] = this.state.companies.filter(ele => ele.company === event.target.value);
-        this.setState({ selected });
+        if (event.target.className === 'selection__random') {
+            const selected = this.state.companies[Math.floor(Math.random() * this.state.companies.length)];
+            this.setState({ selected });
+        } else {
+            const [selected] = this.state.companies.filter(ele => ele.company === event.target.value);
+            this.setState({ selected });
+        }
     };
-    buttonClick = () => {
+    start = () => {
         this.recognition.start();
     };
     render() {
         return (
             <div className="landing">
-                <h1>Shout Out!</h1>
-                <div>Choose a company or slogan!</div>
-                <div>Company:</div>
-                <select name="company-select" onChange={this.setSelected} value={this.state.selected.company}>
-                    {this.state.companies.map(company => (
-                        <option key={company.company} value={company.company}>
-                            {company.company}
-                        </option>
-                    ))}
-                </select>
-                <div>Slogan</div>
-                <select name="slogan-select" onChange={this.setSelected} value={this.state.selected.company}>
-                    {this.state.companies.map(company => (
-                        <option key={company.company} value={company.company}>{company.slogan}</option>
-                    ))}
-                </select>
-                <div>
-                    <button onClick={this.buttonClick}>
+                <div className="start">
+                    <button onClick={this.start}>
                         Shout Out!
                     </button>
+                </div>
+                <div className="selection">
+                    <div className="selection__title">Company:</div>
+                    <select
+                        className="selection__input"
+                        name="company-select"
+                        onChange={this.setSelected}
+                        value={this.state.selected.company}
+                    >
+                        {this.state.companies.map(company => (
+                            <option key={company.company} value={company.company}>
+                                {company.company}
+                            </option>
+                        ))}
+                    </select>
+                    <div className="selection__title">Slogan</div>
+                    <select
+                        className="selection__input"
+                        name="slogan-select"
+                        onChange={this.setSelected}
+                        value={this.state.selected.company}
+                    >
+                        {this.state.companies.map(company => (
+                            <option key={company.company} value={company.company}>{company.slogan}</option>
+                        ))}
+                    </select>
+                    <br />
+                    <button className="selection__random" onClick={this.setSelected}>
+                        Random
+                    </button>
+
                 </div>
             </div>
         );

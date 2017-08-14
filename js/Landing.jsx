@@ -5,7 +5,8 @@ class Landing extends Component {
         super(props);
         this.state = {
             companies: [],
-            selected: {}
+            selected: {},
+            speaking: false
         };
         this.recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
     }
@@ -16,9 +17,11 @@ class Landing extends Component {
         this.recognition.interimResults = true;
         this.recognition.addEventListener('result', e => {
             const transcript = Array.from(e.results).map(result => result[0]).map(result => result.transcript).join('');
-            console.log(transcript);
+            this.display.textContent = transcript;
         });
-        this.recognition.addEventListener('end', this.recognition.start);
+        this.recognition.addEventListener('end', () => {
+            this.setState({ speaking: !this.state.speaking });
+        });
     }
     setSelected = event => {
         if (event.target.className === 'selection__random') {
@@ -31,14 +34,22 @@ class Landing extends Component {
     };
     start = () => {
         this.recognition.start();
+        this.setState({ speaking: !this.state.speaking });
+    };
+    stop = () => {
+        this.recognition.stop();
     };
     render() {
         return (
             <div className="landing">
                 <div className="start">
-                    <button onClick={this.start}>
-                        Shout Out!
-                    </button>
+                    {this.state.speaking
+                        ? <button onClick={this.stop}>
+                              Quiet Down!
+                          </button>
+                        : <button onClick={this.start}>
+                              Shout Out!
+                          </button>}
                 </div>
                 <div className="selection">
                     <div className="selection__title">Company:</div>
@@ -69,7 +80,15 @@ class Landing extends Component {
                     <button className="selection__random" onClick={this.setSelected}>
                         Random
                     </button>
-
+                </div>
+                <div className="results">
+                    <h4 className="results__title">Results</h4>
+                    <div
+                        className="results__display"
+                        ref={element => {
+                            this.display = element;
+                        }}
+                    />
                 </div>
             </div>
         );

@@ -1,101 +1,482 @@
 [
-    { "company": "7 Up", "slogan": "The Un-cola" },
-    { "company": "ABC’s Wide World of Sports", "slogan": "The thrill of victory and the agony of defeat" },
-    { "company": "Adidas", "slogan": "impossible is nothing" },
-    { "company": "Ajax", "slogan": "Stronger than dirt" },
-    { "company": "Alka Seltzer", "slogan": "I can’t believe I ate the whole thing" },
-    { "company": "Allstate", "slogan": "You’re in good hands with Allstate (Allstate)" },
-    { "company": "American Express", "slogan": "Don’t leave home without it" },
-    { "company": "Apple", "slogan": "Think Different" },
-    { "company": "AT&T", "slogan": "Reach out and touch someone" },
-    { "company": "Avis", "slogan": "We try harder." },
-    { "company": "Beef Council", "slogan": "Beef. It’s what’s for dinner" },
-    { "company": "BMW", "slogan": "The Ultimate Driving Machine" },
-    { "company": "Bounty", "slogan": "The quicker picker-upper" },
-    { "company": "Brylcreem", "slogan": "A little dab’ll do ya" },
-    { "company": "Budweiser", "slogan": "The king of beers" },
-    { "company": "Burger King", "slogan": "Have it your way" },
-    { "company": "California Milk Processor Board", "slogan": "Got Milk?" },
-    { "company": "Campbell’s Soup", "slogan": "M’m! M’m! Good!" },
-    { "company": "Capital One", "slogan": "What’s in your wallet?" },
-    { "company": "Champale Malt Liquor", "slogan": "Champale Makes You Feel Special, Every Day" },
-    { "company": "Charmin Toilet Paper", "slogan": "Please Don’t Squeeze the Charmin" },
-    { "company": "Chevrolet", "slogan": "The Heartbeat of America" },
-    { "company": "Citibank", "slogan": "The Citi never sleeps" },
-    { "company": "Clairol", "slogan": "Does she or doesn’t she?" },
-    { "company": "Coca Cola", "slogan": "Open happiness" },
-    { "company": "Colt 45 Malt Liquour", "slogan": "It Works Every Time" },
-    { "company": "Crest Toothpaste", "slogan": "Look, Ma, no cavities!" },
-    { "company": "DeBeers", "slogan": "A diamond is forever" },
-    { "company": "Disney Land", "slogan": "The happiest place on earth" },
-    { "company": "E.F. Hutton", "slogan": "When E.F. Hutton talks, people listen" },
-    { "company": "Energizer Batteries", "slogan": "It keeps going... and going... and going" },
-    { "company": "Fed-X", "slogan": "When it absolutely, positively has to be there overnight" },
-    { "company": "Fiat Strada", "slogan": "Hand built by robots" },
-    { "company": "Forbes Magazine", "slogan": "Capitalist Tool" },
-    { "company": "Frosted Flakes", "slogan": "They're G-r-r-r-r-eat!" },
-    { "company": "FTD", "slogan": "Say It With Flowers" },
-    { "company": "Future Shop", "slogan": "See what the future has in store" },
-    { "company": "Gatorade", "slogan": "Is it in you?" },
-    { "company": "Geico", "slogan": "So Easy a Caveman Can Do It" },
-    { "company": "General Electric", "slogan": "We bring good things to life (GE)" },
-    { "company": "Greyhound", "slogan": "Leave the driving to us" },
-    { "company": "Grey Poupon", "slogan": "Pardon me, do you have any Grey Poupon?" },
-    { "company": "Haig Scotch Whiskey", "slogan": "Don’t be vague. Ask for Haig." },
-    { "company": "Hallmark", "slogan": "When you care enough to send the very best" },
-    { "company": "Hertz", "slogan": "Let Hertz Put You In the Driver’s Seat" },
-    { "company": "Intel", "slogan": "Intel inside" },
-    { "company": "Ivory Soap", "slogan": "99 and 44/100% pure" },
-    { "company": "John Deere", "slogan": "Nothing runs like a Deere" },
-    { "company": "Kay Jewelers", "slogan": "Every kiss begins with Kay" },
-    { "company": "Kentucky Fried Chicken", "slogan": "Finger lickin’ good" },
-    { "company": "Lexus", "slogan": "The relentless pursuit of perfection" },
-    { "company": "Levy’s Rye Bread", "slogan": "You don’t have to be Jewish to love Levy’s Rye Bread" },
-    { "company": "L’Oreal", "slogan": "Because I’m worth it" },
-    { "company": "Lay’s Potato Chips", "slogan": "Betcha can’t eat just one" },
-    { "company": "M&Ms", "slogan": "Melts in your mouth, not in your hands" },
+    {
+        "company": "7 Up",
+        "slogan": "The Un-cola",
+        "readable": "the uncola"
+    },
+    {
+        "company": "ABC’s Wide World of Sports",
+        "slogan": "The thrill of victory and the agony of defeat",
+        "readable": "the thrill of victory and the agony of defeat"
+    },
+    {
+        "company": "Adidas",
+        "slogan": "impossible is nothing",
+        "readable": "impossible is nothing"
+    },
+    {
+        "company": "Ajax",
+        "slogan": "Stronger than dirt",
+        "readable": "stronger than dirt"
+    },
+    {
+        "company": "Alka Seltzer",
+        "slogan": "I can’t believe I ate the whole thing",
+        "readable": "i cant believe i ate the whole thing"
+    },
+    {
+        "company": "Allstate",
+        "slogan": "You’re in good hands with Allstate",
+        "readable": "youre in good hands with allstate"
+    },
+    {
+        "company": "American Express",
+        "slogan": "Don’t leave home without it",
+        "readable": "dont leave home without it"
+    },
+    {
+        "company": "Apple",
+        "slogan": "Think Different",
+        "readable": "think different"
+    },
+    {
+        "company": "AT&T",
+        "slogan": "Reach out and touch someone",
+        "readable": "reach out and touch someone"
+    },
+    {
+        "company": "Avis",
+        "slogan": "We try harder.",
+        "readable": "we try harder"
+    },
+    {
+        "company": "Beef Council",
+        "slogan": "Beef. It’s what’s for dinner",
+        "readable": "beef its whats for dinner"
+    },
+    {
+        "company": "BMW",
+        "slogan": "The Ultimate Driving Machine",
+        "readable": "the ultimate driving machine"
+    },
+    {
+        "company": "Bounty",
+        "slogan": "The quicker picker-upper",
+        "readable": "the quicker pickerupper"
+    },
+    {
+        "company": "Brylcreem",
+        "slogan": "A little dab’ll do ya",
+        "readable": "a little dabll do ya"
+    },
+    {
+        "company": "Budweiser",
+        "slogan": "The king of beers",
+        "readable": "the king of beers"
+    },
+    {
+        "company": "Burger King",
+        "slogan": "Have it your way",
+        "readable": "have it your way"
+    },
+    {
+        "company": "California Milk Processor Board",
+        "slogan": "Got Milk?",
+        "readable": "got milk"
+    },
+    {
+        "company": "Campbell’s Soup",
+        "slogan": "M’m! M’m! Good!",
+        "readable": "mm mm good"
+    },
+    {
+        "company": "Capital One",
+        "slogan": "What’s in your wallet?",
+        "readable": "whats in your wallet"
+    },
+    {
+        "company": "Champale Malt Liquor",
+        "slogan": "Champale Makes You Feel Special, Every Day",
+        "readable": "champale makes you feel special every day"
+    },
+    {
+        "company": "Charmin Toilet Paper",
+        "slogan": "Please Don’t Squeeze the Charmin",
+        "readable": "please dont squeeze the charmin"
+    },
+    {
+        "company": "Chevrolet",
+        "slogan": "The Heartbeat of America",
+        "readable": "the heartbeat of america"
+    },
+    {
+        "company": "Citibank",
+        "slogan": "The Citi never sleeps",
+        "readable": "the citi never sleeps"
+    },
+    {
+        "company": "Clairol",
+        "slogan": "Does she or doesn’t she?",
+        "readable": "does she or doesnt she"
+    },
+    {
+        "company": "Coca Cola",
+        "slogan": "Open happiness",
+        "readable": "open happiness"
+    },
+    {
+        "company": "Colt 45 Malt Liquour",
+        "slogan": "It Works Every Time",
+        "readable": "it works every time"
+    },
+    {
+        "company": "Crest Toothpaste",
+        "slogan": "Look, Ma, no cavities!",
+        "readable": "look ma no cavities"
+    },
+    {
+        "company": "DeBeers",
+        "slogan": "A diamond is forever",
+        "readable": "a diamond is forever"
+    },
+    {
+        "company": "Disney Land",
+        "slogan": "The happiest place on earth",
+        "readable": "the happiest place on earth"
+    },
+    {
+        "company": "E.F. Hutton",
+        "slogan": "When E.F. Hutton talks, people listen",
+        "readable": "when ef hutton talks people listen"
+    },
+    {
+        "company": "Energizer Batteries",
+        "slogan": "It keeps going... and going... and going",
+        "readable": "it keeps going and going and going"
+    },
+    {
+        "company": "Fed-X",
+        "slogan": "When it absolutely, positively has to be there overnight",
+        "readable": "when it absolutely positively has to be there overnight"
+    },
+    {
+        "company": "Fiat Strada",
+        "slogan": "Hand built by robots",
+        "readable": "hand built by robots"
+    },
+    {
+        "company": "Forbes Magazine",
+        "slogan": "Capitalist Tool",
+        "readable": "capitalist tool"
+    },
+    {
+        "company": "Frosted Flakes",
+        "slogan": "They're G-r-r-r-r-eat!",
+        "readable": "theyre grrrreat"
+    },
+    {
+        "company": "FTD",
+        "slogan": "Say It With Flowers",
+        "readable": "say it with flowers"
+    },
+    {
+        "company": "Future Shop",
+        "slogan": "See what the future has in store",
+        "readable": "see what the future has in store"
+    },
+    {
+        "company": "Gatorade",
+        "slogan": "Is it in you?",
+        "readable": "is it in you"
+    },
+    {
+        "company": "Geico",
+        "slogan": "So Easy a Caveman Can Do It",
+        "readable": "so easy a caveman can do it"
+    },
+    {
+        "company": "General Electric",
+        "slogan": "We bring good things to life (GE)",
+        "readable": "we bring good things to life ge"
+    },
+    {
+        "company": "Greyhound",
+        "slogan": "Leave the driving to us",
+        "readable": "leave the driving to us"
+    },
+    {
+        "company": "Grey Poupon",
+        "slogan": "Pardon me, do you have any Grey Poupon?",
+        "readable": "pardon me do you have any grey poupon"
+    },
+    {
+        "company": "Haig Scotch Whiskey",
+        "slogan": "Don’t be vague. Ask for Haig.",
+        "readable": "dont be vague ask for haig"
+    },
+    {
+        "company": "Hallmark",
+        "slogan": "When you care enough to send the very best",
+        "readable": "when you care enough to send the very best"
+    },
+    {
+        "company": "Hertz",
+        "slogan": "Let Hertz Put You In the Driver’s Seat",
+        "readable": "let hertz put you in the drivers seat"
+    },
+    {
+        "company": "Intel",
+        "slogan": "Intel inside",
+        "readable": "intel inside"
+    },
+    {
+        "company": "Ivory Soap",
+        "slogan": "99 and 44/100% pure",
+        "readable": " and  pure"
+    },
+    {
+        "company": "John Deere",
+        "slogan": "Nothing runs like a Deere",
+        "readable": "nothing runs like a deere"
+    },
+    {
+        "company": "Kay Jewelers",
+        "slogan": "Every kiss begins with Kay",
+        "readable": "every kiss begins with kay"
+    },
+    {
+        "company": "Kentucky Fried Chicken",
+        "slogan": "Finger lickin’ good",
+        "readable": "finger lickin good"
+    },
+    {
+        "company": "Lexus",
+        "slogan": "The relentless pursuit of perfection",
+        "readable": "the relentless pursuit of perfection"
+    },
+    {
+        "company": "Levy’s Rye Bread",
+        "slogan": "You don’t have to be Jewish to love Levy’s Rye Bread",
+        "readable": "you dont have to be jewish to love levys rye bread"
+    },
+    {
+        "company": "L’Oreal",
+        "slogan": "Because I’m worth it",
+        "readable": "because im worth it"
+    },
+    {
+        "company": "Lay’s Potato Chips",
+        "slogan": "Betcha can’t eat just one",
+        "readable": "betcha cant eat just one"
+    },
+    {
+        "company": "M&Ms",
+        "slogan": "Melts in your mouth, not in your hands",
+        "readable": "melts in your mouth not in your hands"
+    },
     {
         "company": "MasterCard",
-        "slogan": "There are some things money can’t buy, for everything else there’s MasterCard"
+        "slogan": "There are some things money can’t buy, for everything else there’s MasterCard",
+        "readable": "there are some things money cant buy for everything else theres mastercard"
     },
-    { "company": "Maxwell House", "slogan": "Good to the last drop" },
-    { "company": "McDonald’s", "slogan": "I’m lovin’ it" },
-    { "company": "Meow Mix", "slogan": "Tastes so good cats ask for it by name" },
-    { "company": "Miller Lite", "slogan": "Tastes great, less filling" },
-    { "company": "Morton Salt", "slogan": "When it rains, it pours!" },
-    { "company": "Motel 6", "slogan": "We’ll leave a light on for you" },
-    { "company": "National Milk Producers Board", "slogan": "Got Milk?" },
-    { "company": "New York State", "slogan": "I love New York" },
-    { "company": "Nike", "slogan": "Just do it" },
-    { "company": "Nokia", "slogan": "Connecting people" },
-    { "company": "Packard ", "slogan": "Ask the Man Who Owns One" },
-    { "company": "Partnership for a Drug-Free America", "slogan": "This is your brain on drugs" },
-    { "company": "Pepsi", "slogan": "The choice of a new generation added by: KirkSaw" },
-    { "company": "Perdue", "slogan": "It takes a tough man to make a tender chicken" },
-    { "company": "Porsche", "slogan": "There is no substitute Porsche" },
-    { "company": "Rice Krispies", "slogan": "Snap! Crackle! Pop!" },
-    { "company": "Rolaids", "slogan": "How do you spell relief? R-O-L-A-I-D-S" },
-    { "company": "Skittles", "slogan": "Taste the Rainbow" },
-    { "company": "Smith Barney", "slogan": "We make money the old-fashioned way. We earn it." },
-    { "company": "Smucker’s", "slogan": "With a name like Smucker’s, it has to be good" },
-    { "company": "Sprite", "slogan": "Obey your thirst" },
-    { "company": "Staples", "slogan": "That was easy" },
-    { "company": "Texaco", "slogan": "You can trust your car to the man who wears the star" },
-    { "company": "The Independent", "slogan": "It is. Are you?" },
-    { "company": "The New York Times", "slogan": "All the news that’s fit to print" },
-    { "company": "Timex", "slogan": "Takes a licking and keeps on ticking" },
-    { "company": "Trix Cereal", "slogan": "Trix Are For Kids" },
-    { "company": "United Airlines", "slogan": "Fly the Friendly Skies" },
-    { "company": "United Negro College Fund", "slogan": "A mind is a terrible thing to waste" },
-    { "company": "UPS", "slogan": "What Can Brown Do For You?" },
-    { "company": "U.S. Army", "slogan": "Be all that you can be" },
-    { "company": "U.S. Forest Service/Smokey the Bear", "slogan": "Only you can prevent forest fires" },
-    { "company": "U.S. Postal Service", "slogan": "We deliver" },
-    { "company": "Verizon Mobile", "slogan": "Can you hear me now?" },
-    { "company": "Volkswagen", "slogan": "Think Small" },
-    { "company": "Wendy’s", "slogan": "Where’s the beef?" },
-    { "company": "Wheaties", "slogan": "The Breakfast of champions" },
-    { "company": "WINS Radio, New York", "slogan": "You give us 22 minutes, we’ll give you the world" },
-    { "company": "Winston Cigarettes", "slogan": "Winston Tastes Good Like A Cigarette Should" },
-    { "company": "Yellow Pages", "slogan": "Let your fingers do the walking" }
+    {
+        "company": "Maxwell House",
+        "slogan": "Good to the last drop",
+        "readable": "good to the last drop"
+    },
+    {
+        "company": "McDonald’s",
+        "slogan": "I’m lovin’ it",
+        "readable": "im lovin it"
+    },
+    {
+        "company": "Meow Mix",
+        "slogan": "Tastes so good cats ask for it by name",
+        "readable": "tastes so good cats ask for it by name"
+    },
+    {
+        "company": "Miller Lite",
+        "slogan": "Tastes great, less filling",
+        "readable": "tastes great less filling"
+    },
+    {
+        "company": "Morton Salt",
+        "slogan": "When it rains, it pours!",
+        "readable": "when it rains it pours"
+    },
+    {
+        "company": "Motel 6",
+        "slogan": "We’ll leave a light on for you",
+        "readable": "well leave a light on for you"
+    },
+    {
+        "company": "National Milk Producers Board",
+        "slogan": "Got Milk?",
+        "readable": "got milk"
+    },
+    {
+        "company": "New York State",
+        "slogan": "I love New York",
+        "readable": "i love new york"
+    },
+    {
+        "company": "Nike",
+        "slogan": "Just do it",
+        "readable": "just do it"
+    },
+    {
+        "company": "Nokia",
+        "slogan": "Connecting people",
+        "readable": "connecting people"
+    },
+    {
+        "company": "Packard ",
+        "slogan": "Ask the Man Who Owns One",
+        "readable": "ask the man who owns one"
+    },
+    {
+        "company": "Partnership for a Drug-Free America",
+        "slogan": "This is your brain on drugs",
+        "readable": "this is your brain on drugs"
+    },
+    {
+        "company": "Pepsi",
+        "slogan": "The choice of a new generation added by: KirkSaw",
+        "readable": "the choice of a new generation added by kirksaw"
+    },
+    {
+        "company": "Perdue",
+        "slogan": "It takes a tough man to make a tender chicken",
+        "readable": "it takes a tough man to make a tender chicken"
+    },
+    {
+        "company": "Porsche",
+        "slogan": "There is no substitute Porsche",
+        "readable": "there is no substitute porsche"
+    },
+    {
+        "company": "Rice Krispies",
+        "slogan": "Snap! Crackle! Pop!",
+        "readable": "snap crackle pop"
+    },
+    {
+        "company": "Rolaids",
+        "slogan": "How do you spell relief? R-O-L-A-I-D-S",
+        "readable": "how do you spell relief rolaids"
+    },
+    {
+        "company": "Skittles",
+        "slogan": "Taste the Rainbow",
+        "readable": "taste the rainbow"
+    },
+    {
+        "company": "Smith Barney",
+        "slogan": "We make money the old-fashioned way. We earn it.",
+        "readable": "we make money the oldfashioned way we earn it"
+    },
+    {
+        "company": "Smucker’s",
+        "slogan": "With a name like Smucker’s, it has to be good",
+        "readable": "with a name like smuckers it has to be good"
+    },
+    {
+        "company": "Sprite",
+        "slogan": "Obey your thirst",
+        "readable": "obey your thirst"
+    },
+    {
+        "company": "Staples",
+        "slogan": "That was easy",
+        "readable": "that was easy"
+    },
+    {
+        "company": "Texaco",
+        "slogan": "You can trust your car to the man who wears the star",
+        "readable": "you can trust your car to the man who wears the star"
+    },
+    {
+        "company": "The Independent",
+        "slogan": "It is. Are you?",
+        "readable": "it is are you"
+    },
+    {
+        "company": "The New York Times",
+        "slogan": "All the news that’s fit to print",
+        "readable": "all the news thats fit to print"
+    },
+    {
+        "company": "Timex",
+        "slogan": "Takes a licking and keeps on ticking",
+        "readable": "takes a licking and keeps on ticking"
+    },
+    {
+        "company": "Trix Cereal",
+        "slogan": "Trix Are For Kids",
+        "readable": "trix are for kids"
+    },
+    {
+        "company": "United Airlines",
+        "slogan": "Fly the Friendly Skies",
+        "readable": "fly the friendly skies"
+    },
+    {
+        "company": "United Negro College Fund",
+        "slogan": "A mind is a terrible thing to waste",
+        "readable": "a mind is a terrible thing to waste"
+    },
+    {
+        "company": "UPS",
+        "slogan": "What Can Brown Do For You?",
+        "readable": "what can brown do for you"
+    },
+    {
+        "company": "U.S. Army",
+        "slogan": "Be all that you can be",
+        "readable": "be all that you can be"
+    },
+    {
+        "company": "U.S. Forest Service/Smokey the Bear",
+        "slogan": "Only you can prevent forest fires",
+        "readable": "only you can prevent forest fires"
+    },
+    {
+        "company": "U.S. Postal Service",
+        "slogan": "We deliver",
+        "readable": "we deliver"
+    },
+    {
+        "company": "Verizon Mobile",
+        "slogan": "Can you hear me now?",
+        "readable": "can you hear me now"
+    },
+    {
+        "company": "Volkswagen",
+        "slogan": "Think Small",
+        "readable": "think small"
+    },
+    {
+        "company": "Wendy’s",
+        "slogan": "Where’s the beef?",
+        "readable": "wheres the beef"
+    },
+    {
+        "company": "Wheaties",
+        "slogan": "The Breakfast of champions",
+        "readable": "the breakfast of champions"
+    },
+    {
+        "company": "WINS Radio, New York",
+        "slogan": "You give us 22 minutes, we’ll give you the world",
+        "readable": "you give us  minutes well give you the world"
+    },
+    {
+        "company": "Winston Cigarettes",
+        "slogan": "Winston Tastes Good Like A Cigarette Should",
+        "readable": "winston tastes good like a cigarette should"
+    },
+    {
+        "company": "Yellow Pages",
+        "slogan": "Let your fingers do the walking",
+        "readable": "let your fingers do the walking"
+    }
 ]

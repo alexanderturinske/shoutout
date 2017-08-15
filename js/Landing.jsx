@@ -6,8 +6,10 @@ class Landing extends Component {
         this.state = {
             companies: [],
             selected: {},
-            speaking: false
+            speaking: false,
+            score: 0
         };
+        this.winner = false;
         this.recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
     }
     componentDidMount() {
@@ -16,17 +18,29 @@ class Landing extends Component {
         });
         this.recognition.interimResults = true;
         this.recognition.addEventListener('result', e => {
+            this.setState({ score: this.state.score + 1 });
             this.display.classList.remove('results--fail', 'results--succeed');
             const transcript = Array.from(e.results).map(result => result[0]).map(result => result.transcript).join('');
             this.display.textContent = transcript;
             if (transcript.toLowerCase().replace(/[^a-zA-Z ]/g, '') === this.state.selected.readable) {
+                this.winner = true;
                 this.display.classList.add('results--succeed');
             } else {
+                this.winner = false;
                 this.display.classList.add('results--fail');
             }
         });
         this.recognition.addEventListener('end', () => {
+            if (this.winner) {
+                console.log('w', this.state.score);
+            } else {
+                this.setState({ score: 0 });
+                console.log('l', this.state.score);
+            }
             this.setState({ speaking: !this.state.speaking });
+        });
+        this.recognition.addEventListener('start', () => {
+            this.setState({ score: 0 });
         });
     }
     setSelected = event => {
@@ -95,6 +109,9 @@ class Landing extends Component {
                             this.display = element;
                         }}
                     />
+                    <div className="results__score">
+                        Score: {this.state.score}
+                    </div>
                 </div>
             </div>
         );

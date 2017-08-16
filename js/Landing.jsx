@@ -18,6 +18,20 @@ class Landing extends Component {
             this.setState({ companies: responseJson, selected: responseJson[0] });
         });
         this.recognition.interimResults = true;
+        this.addResultListener();
+        this.addStartListener();
+        this.addEndListener();
+    }
+    setSelected = event => {
+        if (event.target.className === 'selection__random') {
+            const selected = this.state.companies[Math.floor(Math.random() * this.state.companies.length)];
+            this.setState({ selected });
+        } else {
+            const [selected] = this.state.companies.filter(ele => ele.company === event.target.value);
+            this.setState({ selected });
+        }
+    };
+    addResultListener = () => {
         this.recognition.addEventListener('result', e => {
             this.setState({ score: this.state.score + 1 });
             this.resultDisplay.classList.remove('results--fail', 'results--succeed');
@@ -31,6 +45,8 @@ class Landing extends Component {
                 this.resultDisplay.classList.add('results--fail');
             }
         });
+    };
+    addEndListener = () => {
         this.recognition.addEventListener('end', () => {
             if (this.winner) {
                 this.resultStatus.textContent = 'You Win!';
@@ -40,18 +56,11 @@ class Landing extends Component {
             }
             this.setState({ speaking: !this.state.speaking });
         });
+    };
+    addStartListener = () => {
         this.recognition.addEventListener('start', () => {
             this.setState({ score: 0 });
         });
-    }
-    setSelected = event => {
-        if (event.target.className === 'selection__random') {
-            const selected = this.state.companies[Math.floor(Math.random() * this.state.companies.length)];
-            this.setState({ selected });
-        } else {
-            const [selected] = this.state.companies.filter(ele => ele.company === event.target.value);
-            this.setState({ selected });
-        }
     };
     start = () => {
         this.recognition.start();
@@ -61,16 +70,24 @@ class Landing extends Component {
         this.recognition.stop();
     };
     render() {
+        let action;
+        if (this.state.speaking) {
+            action = (
+                <button onClick={this.stop}>
+                    Quiet Down!
+                </button>
+            );
+        } else {
+            action = (
+                <button onClick={this.start}>
+                    Shout Out!
+                </button>
+            );
+        }
         return (
             <div className="landing">
                 <div className="start">
-                    {this.state.speaking
-                        ? <button onClick={this.stop}>
-                              Quiet Down!
-                          </button>
-                        : <button onClick={this.start}>
-                              Shout Out!
-                          </button>}
+                    {action}
                 </div>
                 <div className="selection">
                     <Dropdown

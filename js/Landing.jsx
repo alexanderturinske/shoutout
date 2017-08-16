@@ -20,23 +20,23 @@ class Landing extends Component {
         this.recognition.interimResults = true;
         this.recognition.addEventListener('result', e => {
             this.setState({ score: this.state.score + 1 });
-            this.display.classList.remove('results--fail', 'results--succeed');
+            this.resultDisplay.classList.remove('results--fail', 'results--succeed');
             const transcript = Array.from(e.results).map(result => result[0]).map(result => result.transcript).join('');
-            this.display.textContent = transcript;
+            this.resultDisplay.textContent = transcript;
             if (transcript.toLowerCase().replace(/[^a-zA-Z ]/g, '') === this.state.selected.readable) {
                 this.winner = true;
-                this.display.classList.add('results--succeed');
+                this.resultDisplay.classList.add('results--succeed');
             } else {
                 this.winner = false;
-                this.display.classList.add('results--fail');
+                this.resultDisplay.classList.add('results--fail');
             }
         });
         this.recognition.addEventListener('end', () => {
             if (this.winner) {
-                console.log('w', this.state.score);
+                this.resultStatus.textContent = 'You Win!';
             } else {
                 this.setState({ score: 0 });
-                console.log('l', this.state.score);
+                this.resultStatus.textContent = 'You Lose!';
             }
             this.setState({ speaking: !this.state.speaking });
         });
@@ -95,7 +95,13 @@ class Landing extends Component {
                     <div
                         className="results__display"
                         ref={element => {
-                            this.display = element;
+                            this.resultDisplay = element;
+                        }}
+                    />
+                    <div
+                        className="results__status"
+                        ref={element => {
+                            this.resultStatus = element;
                         }}
                     />
                     <div className="results__score">

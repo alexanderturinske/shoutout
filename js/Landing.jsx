@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Dropdown from './Dropdown';
 
 class Landing extends Component {
     constructor(props) {
@@ -72,30 +73,18 @@ class Landing extends Component {
                           </button>}
                 </div>
                 <div className="selection">
-                    <div className="selection__title">Company:</div>
-                    <select
-                        className="selection__input"
-                        name="company-select"
-                        onChange={this.setSelected}
-                        value={this.state.selected.company}
-                    >
-                        {this.state.companies.map(company => (
-                            <option key={company.company} value={company.company}>
-                                {company.company}
-                            </option>
-                        ))}
-                    </select>
-                    <div className="selection__title">Slogan</div>
-                    <select
-                        className="selection__input"
-                        name="slogan-select"
-                        onChange={this.setSelected}
-                        value={this.state.selected.company}
-                    >
-                        {this.state.companies.map(company => (
-                            <option key={company.company} value={company.company}>{company.slogan}</option>
-                        ))}
-                    </select>
+                    <Dropdown
+                        type="Company"
+                        companies={this.state.companies}
+                        selected={this.state.selected}
+                        setSelected={this.setSelected}
+                    />
+                    <Dropdown
+                        type="Slogan"
+                        companies={this.state.companies}
+                        selected={this.state.selected}
+                        setSelected={this.setSelected}
+                    />
                     <br />
                     <button className="selection__random" onClick={this.setSelected}>
                         Random

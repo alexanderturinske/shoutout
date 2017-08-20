@@ -23,7 +23,7 @@ class Landing extends Component {
         this.addEndListener();
     }
     setSelected = event => {
-        if (event.target.className === 'selection__random') {
+        if (event.target.className === 'selection-random') {
             const selected = this.state.companies[Math.floor(Math.random() * this.state.companies.length)];
             this.setState({ selected });
         } else {
@@ -49,12 +49,13 @@ class Landing extends Component {
     addEndListener = () => {
         this.recognition.addEventListener('end', () => {
             if (this.winner) {
-                this.resultStatus.textContent = 'You Win!';
+                console.log('yis');
             } else {
                 this.setState({ score: 0 });
-                this.resultStatus.textContent = 'You Lose!';
             }
+            this.startButton.classList.remove('start--begin', 'start--finish');
             this.setState({ speaking: !this.state.speaking });
+            this.startButton.classList.add('start--begin');
         });
     };
     addStartListener = () => {
@@ -65,65 +66,67 @@ class Landing extends Component {
     start = () => {
         this.recognition.start();
         this.setState({ speaking: !this.state.speaking });
+        this.startButton.classList.add('start--finish');
     };
     stop = () => {
         this.recognition.stop();
     };
     render() {
-        let action;
-        if (this.state.speaking) {
-            action = (
-                <button onClick={this.stop}>
-                    Quiet Down!
-                </button>
-            );
-        } else {
-            action = (
-                <button onClick={this.start}>
-                    Shout Out!
-                </button>
-            );
-        }
         return (
             <div className="landing">
-                <div className="start">
-                    {action}
+                <div className="header">
+                    <h1>Speak Up!</h1>
                 </div>
-                <div className="selection">
-                    <Dropdown
-                        type="Company"
-                        companies={this.state.companies}
-                        selected={this.state.selected}
-                        setSelected={this.setSelected}
-                    />
-                    <Dropdown
-                        type="Slogan"
-                        companies={this.state.companies}
-                        selected={this.state.selected}
-                        setSelected={this.setSelected}
-                    />
-                    <br />
-                    <button className="selection__random" onClick={this.setSelected}>
-                        Random
+                <div className="start">
+                    <button className="start__button" onClick={this.start}>
+                        <img
+                            className="start__image start--begin"
+                            src="./public/microphone.png"
+                            alt="microphone"
+                            ref={element => {
+                                this.startButton = element;
+                            }}
+                        />
                     </button>
                 </div>
+                <div className="selection-menu">
+                    <div className="selection-menu__predefined">
+                        <Dropdown
+                            type="Company"
+                            companies={this.state.companies}
+                            selected={this.state.selected}
+                            setSelected={this.setSelected}
+                        />
+                        <Dropdown
+                            type="Slogan"
+                            companies={this.state.companies}
+                            selected={this.state.selected}
+                            setSelected={this.setSelected}
+                        />
+                    </div>
+                    <div className="selection-menu__random">
+                        <button className="selection-random" onClick={this.setSelected}>
+                            Random
+                        </button>
+                    </div>
+                </div>
                 <div className="results">
-                    <h4 className="results__title">Results</h4>
+                    <h1 className="results__title">Results</h1>
                     <div
                         className="results__display"
                         ref={element => {
                             this.resultDisplay = element;
                         }}
                     />
+                    <div className="results__score">
+                        Score: {this.state.score}
+                    </div>
                     <div
                         className="results__status"
                         ref={element => {
                             this.resultStatus = element;
                         }}
                     />
-                    <div className="results__score">
-                        Score: {this.state.score}
-                    </div>
                 </div>
             </div>
         );

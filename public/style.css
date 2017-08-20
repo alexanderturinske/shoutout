@@ -15,12 +15,6 @@ body,
     justify-content: center;
 }
 
-.landing {
-    background-image: url('./microphone-background.jpeg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
 .start__button {
     border-radius: 100px;
     border-width: 0px;

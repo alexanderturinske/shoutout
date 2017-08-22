@@ -1,4 +1,4 @@
-# shoutout
+# Speak Up!
 
 Having fun with React and Speech Recognition.
 

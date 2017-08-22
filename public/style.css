@@ -3,7 +3,7 @@ body,
 #app,
 .app,
 .landing {
-    height: 100%;
+  height: 100%;
 }
 
 .header,
@@ -11,56 +11,109 @@ body,
 .start__button,
 .selection-menu__predefined,
 .selection-menu__random {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+option,
+.selection__title,
+.selection__input,
+.selection-menu__random,
+.results__display,
+.results__score {
+  font-family: monospace;
+}
+
+.selection__title,
+.selection-menu__random,
+.results__title,
+.results__display,
+.results__score {
+  font-size: 3em;
+}
+
+.landing {
+  background-color: aliceblue;
+}
+
+.header {
+  background-color: #FFF5DA;
+  border-bottom: 10px black solid;
+}
+
+.header h1 {
+  font-size: 10em;
+}
+
+.start {
+  margin: 50px auto;
+}
+
+.start__button,
+.start__image {
+  border-radius: 150px;
 }
 
 .start__button {
-    border-radius: 100px;
-    border-width: 0px;
-    background-color: black;
+  border-width: 0px;
+  background-color: black;
+}
+
+.start__button:focus {
+  outline: none;
 }
 
 .start--begin {
-    background-color: red;
+  background-color: #C94444;
 }
 
 .start--finish {
-    background-color: gray;
+  background-color: #88B93E;
 }
 
 .start__image {
-    height: 100px;
-    border-radius: 75px;
+  height: 300px;
+  border-radius: 150px;
+}
+
+.selection-menu__predefined {
+  flex-direction: column;
+  align-items: center;
 }
 
 .selection {
-    display: inline-block;
-    margin: 10px;
+  margin: 50px auto;
+}
+
+.selection__input {
+  background-color: #FFF5DA;
+  font-size: 1.5em;
 }
 
 .selection-random {
-    display: block;
+  display: block;
+  border-radius: 5px;
+  background-color: #FFF5DA;
 }
 
 .results {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  margin: 50px auto;
 }
 
 .results__display,
 .results__score {
-    margin-top: 10px;
-}
-
-.results__score {
+  margin-top: 10px;
 }
 
 .results--succeed {
-    color: green;
+  color: #88B93E;
 }
 
 .results--fail {
-    color: red;
+  color: #C94444;
 }

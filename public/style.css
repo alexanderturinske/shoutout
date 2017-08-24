@@ -30,34 +30,40 @@ option,
 .results__title,
 .results__display,
 .results__score {
-  font-size: 3em;
+  font-size: 3vh;
 }
 
-.landing {
+body {
   background-color: aliceblue;
 }
 
 .header {
   background-color: #FFF5DA;
-  border-bottom: 10px black solid;
+  border-bottom: .5vh black solid;
 }
 
 .header h1 {
-  font-size: 10em;
+  font-size: 4vh;
 }
 
 .start {
-  margin: 50px auto;
+  margin: 5vh auto;
 }
 
 .start__button,
 .start__image {
-  border-radius: 150px;
+  border-radius: 15%;
 }
 
 .start__button {
   border-width: 0px;
   background-color: black;
+  position: relative;
+  padding: 15vh 0 0 0;
+  height: 0;
+  overflow: hidden;
+  width: 15vh;
+  border-radius: 50%;
 }
 
 .start__button:focus {
@@ -73,8 +79,16 @@ option,
 }
 
 .start__image {
-  height: 300px;
-  border-radius: 150px;
+  border-radius: 50%;
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .selection-menu__predefined {
@@ -83,12 +97,17 @@ option,
 }
 
 .selection {
-  margin: 50px auto;
+  margin: 3vh auto;
 }
 
 .selection__input {
   background-color: #FFF5DA;
-  font-size: 1.5em;
+  font-size: 2vw;
+  max-width: 100%;
+}
+
+.selection-menu__random {
+  margin: 3vh auto;
 }
 
 .selection-random {
@@ -101,13 +120,12 @@ option,
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 5px;
-  margin: 50px auto;
+  border-radius: .5%;
 }
 
 .results__display,
 .results__score {
-  margin-top: 10px;
+  margin-top: 1%;
 }
 
 .results--succeed {

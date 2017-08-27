@@ -92,12 +92,6 @@ class Landing extends Component {
                 <div className="selection-menu">
                     <div className="selection-menu__predefined">
                         <Dropdown
-                            type="Company"
-                            companies={this.state.companies}
-                            selected={this.state.selected}
-                            setSelected={this.setSelected}
-                        />
-                        <Dropdown
                             type="Slogan"
                             companies={this.state.companies}
                             selected={this.state.selected}

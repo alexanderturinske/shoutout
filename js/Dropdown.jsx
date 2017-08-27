@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const Dropdown = props => (
     <div className="selection">
-        <div className="selection__title">{props.type}:</div>
         <select
             className="selection__input"
             name={`${props.type.toLowerCase()}-select`}

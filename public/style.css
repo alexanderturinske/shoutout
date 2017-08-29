@@ -40,10 +40,18 @@ body {
 .header {
   background-color: #FFF5DA;
   border-bottom: .5vh black solid;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header h1 {
-  font-size: 4vh;
+.logo {
+  height: 10vh;
+  margin-left: 2%;
+}
+
+.header__instructions {
+  font-size: 1.5vh;
+  max-width: 25%;
 }
 
 .start {

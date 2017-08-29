@@ -10,6 +10,7 @@ class Landing extends Component {
             speaking: false,
             score: 0
         };
+        this.instructions = `Record yourself saying a phrase to earn points! Checkout the leaderboard to see who said it best!`;
         this.winner = false;
         this.recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
     }
@@ -75,7 +76,8 @@ class Landing extends Component {
         return (
             <div className="landing">
                 <div className="header">
-                    <h1>Speak Up!</h1>
+                    <img className="logo" src="./public/logo.png" alt="Speak Up Smiley Face" />
+                    <p className="header__instructions">{this.instructions}</p>
                 </div>
                 <div className="start">
                     <button className="start__button" onClick={this.start}>

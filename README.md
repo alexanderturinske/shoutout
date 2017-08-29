@@ -1,5 +1,4 @@
-# Speak Up!
-
+# ![](/public/logo.png?raw=true "Speak Up!")
 Having fun with React and Speech Recognition.
 
 ## Getting Started
@@ -39,6 +38,7 @@ Currently there are no tests
 ## License
 
 This project is licensed under the MIT License
+Logo provided by [creative commons](https://creativecommons.org/licenses/by/3.0/)
 
 ## Acknowledgments
 
